@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.status-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#start-button {
+    z-index: 2;
+}
+
+.game-container {
+    width: 400px;
+    height: 400px;
+    background-color: #eee;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.player {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    left: calc(50% - 10px); /* プレイヤーを水平中央に配置 */
+    bottom: 10px;
+}
+
+
+.enemy {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red; /* プレイヤーと敵のスタイル */
+}
